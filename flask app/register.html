@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/stylecss.css">
+    <title>Register</title>
+</head>
+<body>
+   
+    <div class="container">
+        <div class="header">
+            <h2>REGISTER PANEL</h2>
+        </div>
+        <form method="POST" action="/register">
+           <div class="form-control">
+               <i class="fas fa-user-circle"></i>
+               <label>Username</label>
+               <input type="text"name="username" id="username" placeholder="Enter your name"autocomplete="off" required>   
+           </div>
+           <div class="form-control">
+            <i class="fas fa-envelope"></i>
+            <label>Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email" autocomplete="off" required>
+        </div>
+        <div class="form-control">
+            <i class="fas fa-phone"></i>
+            <label>Contact Number</label>
+            <input type="tel" name="contact" id="contact" placeholder="Enter your contact number" autocomplete="off" required>
+        </div>
+           <div class="form-control">
+               <i class="fas fa-lock"></i>
+               <label>Password</label>
+               <input type="password"name="password" id="password" placeholder="Enter your password"autocomplete="off" required>   
+           </div>
+           <input class="btn" type="submit" value="Register" >
+           <p>Alerady User?<a href="/login">Login Now</a></p>
+        </form>
+    </div>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+

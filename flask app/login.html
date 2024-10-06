@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/stylecss.css">
+    <title>Login</title>
+</head>
+<body>
+   
+    <div class="container">
+        <div class="header">
+            <h2>LOGIN PANEL</h2>
+        </div>
+        {%if error %}
+        <p style="color: red;">{{error}}</p>
+        {% endif %}
+        <form method="POST" action="/login">
+           <div class="form-control">
+               <i class="fas fa-user-circle"></i>
+               <label>Username</label>
+               <input type="text" name="username" id="username" placeholder="Enter your name"autocomplete="off" required>
+               
+           </div>
+           <div class="form-control">
+               <i class="fas fa-lock"></i>
+               <label>Password</label>
+               <input type="password" name="password" id="password" placeholder="Enter your password"autocomplete="off" required>   
+           </div>
+           <input class="btn" type="submit" value="Login" >
+           <p>Not a User?<a href="/register">Register Now</a></p>
+        </form>
+    </div>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
